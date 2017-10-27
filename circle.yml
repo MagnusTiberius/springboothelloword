@@ -10,4 +10,3 @@ dependencies:
     - sudo pip install awscli
   override:
     - docker info
-    - docker build --rm=false -t $AWS_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/helloworld:$CIRCLE_SHA1 .
