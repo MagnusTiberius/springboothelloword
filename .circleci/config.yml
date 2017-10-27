@@ -50,7 +50,7 @@ jobs:
       # list it
       - run: docker images
 
-      - run: sudo apt-get update && apt-get install -y awscli
+      - run: apt-get install awscli
 
       - deploy:
           name: Push application Docker image
