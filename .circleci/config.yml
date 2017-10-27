@@ -43,3 +43,5 @@ jobs:
       - run: mvn package
 
       - run: docker build -t helloworld .
+
+      --run: docker images
