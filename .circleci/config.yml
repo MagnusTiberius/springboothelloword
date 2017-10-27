@@ -23,6 +23,7 @@ jobs:
     steps:
       - checkout
       - setup_remote_docker
+      - configure_aws_cli 
       # Download and cache dependencies
       - restore_cache:
           keys:
@@ -40,8 +41,11 @@ jobs:
       # run tests!
       - run: mvn integration-test
 
+      # generate package
       - run: mvn package
 
+      # call docker to build the image
       - run: docker build -t helloworld .
 
+      # list it
       - run: docker images
