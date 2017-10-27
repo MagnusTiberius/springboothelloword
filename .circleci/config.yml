@@ -52,11 +52,11 @@ jobs:
 
       - run: sudo apt-get install python
       - run: sudo apt-get install python-pip
-      - run: pip install awscli
+      - run: sudo pip install awscli
 
       #- run: pip install awscli
 
-      #- run: sudo apt-get install awscli
+      - run: sudo apt-get install awscli
 
       - run:
           name: Login to ECR
