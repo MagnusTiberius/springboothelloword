@@ -51,7 +51,7 @@ jobs:
       - run: docker images
 
       - run: sudo apt-get install python
-      - run: sudo apt-get install pip
+      - run: sudo apt-get install python-pip
 
       #- run: pip install awscli
 
