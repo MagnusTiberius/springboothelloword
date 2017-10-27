@@ -41,3 +41,5 @@ jobs:
       - run: mvn integration-test
 
       - run: mvn package
+
+      - run: docker build -t helloworld/app:$CIRCLE_BRANCH .
