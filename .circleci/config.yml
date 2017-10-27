@@ -44,4 +44,4 @@ jobs:
 
       - run: docker build -t helloworld .
 
-      --run: docker images
+      -run: docker images
