@@ -50,12 +50,14 @@ jobs:
       # list it
       - run: docker images
 
-      - run: sudo apt-get install awscli
+      - run: pip install awscli
 
-      - run:
-          name: Login to ECR
-          command: |
-            if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              login="$(aws ecr get-login )"
-              ${login}
-            fi
+      #- run: sudo apt-get install awscli
+
+      #- run:
+      #    name: Login to ECR
+      #    command: |
+      #      if [ "${CIRCLE_BRANCH}" == "master" ]; then
+      #        login="$(aws ecr get-login )"
+      #        ${login}
+      #      fi
