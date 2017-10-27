@@ -23,7 +23,7 @@ jobs:
     steps:
       - checkout
       - setup_remote_docker
-      - configure_aws_cli 
+      #- configure_aws_cli 
       # Download and cache dependencies
       - restore_cache:
           keys:
