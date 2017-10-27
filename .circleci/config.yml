@@ -51,12 +51,12 @@ jobs:
       - run: docker images
 
       - run:
-        name: Install tools
-        command: | 
-          sudo apt-get install python
-          sudo apt-get install python-pip
-          sudo pip install awscli
-          sudo apt-get install awscli
+          name: Install tools
+          command: |
+            sudo apt-get install python
+            sudo apt-get install python-pip
+            sudo pip install awscli
+            sudo apt-get install awscli
 
       # Push
       - run:
