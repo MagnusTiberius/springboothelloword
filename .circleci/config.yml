@@ -42,4 +42,4 @@ jobs:
 
       - run: mvn package
 
-      - run: docker build -t helloworld/app:$CIRCLE_BRANCH .
+      - run: docker build -t helloworld/app .
