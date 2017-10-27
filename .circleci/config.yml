@@ -64,6 +64,6 @@ jobs:
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
               login="$(aws ecr get-login --no-include-email )"
               ${login}
-              docker tag helloworld $AWS_ACCOUNT_ID$.dkr.ecr.us-east-1.amazonaws.com/helloworld:awseppes
-              docker push $AWS_ACCOUNT_ID$.dkr.ecr.us-east-1.amazonaws.com/helloworld:awseppes
+              docker tag helloworld $AWS_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/helloworld:awseppes
+              docker push $AWS_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/helloworld:awseppes
             fi
