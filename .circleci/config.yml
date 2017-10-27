@@ -42,4 +42,4 @@ jobs:
 
       - run: mvn package
 
-      - run: docker build -t helloworld/app .
+      - run: docker build -t helloworld .
