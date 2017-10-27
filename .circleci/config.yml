@@ -58,6 +58,7 @@ jobs:
 
       - run: sudo apt-get install awscli
 
+      # Push
       - run:
           name: Login to ECR
           command: |
